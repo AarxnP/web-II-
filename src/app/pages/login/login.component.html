@@ -1,21 +1,26 @@
-<div class="container-fluid text-center">
+<div class="container-fluid text-center" style="max-width: 400px; margin: 50px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+    <!-- Logo de Nike -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo" style="width: 100px; margin-bottom: 20px;">
 
     <form [formGroup]="form">
         <div class="mb-3">
-            <label for="email" class="form-label">Correo</label>
+            <label for="email" class="form-label" style="font-weight: 700; font-size: 14px; text-align: left; display: block;">Correo</label>
             <input type="email"
                 class="form-control"
-                id="email" formControlName="email">
-            <div class="invalid-feedback">
+                id="email" formControlName="email"
+                style="border: 1px solid #ddd; border-radius: 4px; padding: 10px; width: 100%; box-sizing: border-box; margin-bottom: 10px;">
+            <div class="invalid-feedback" style="color: #e63946; font-size: 12px; text-align: left;">
                 El correo es obligatorio
             </div>
         </div>
         <div class="mb-3">
-            <label for="password" class="form-label">Contraseña</label>
+            <label for="password" class="form-label" style="font-weight: 700; font-size: 14px; text-align: left; display: block;">Contraseña</label>
             <input type="password"
                 class="form-control"
-                id="password" formControlName="password">
-            <div class="invalid-feedback">
+                id="password" formControlName="password"
+                style="border: 1px solid #ddd; border-radius: 4px; padding: 10px; width: 100%; box-sizing: border-box; margin-bottom: 10px;">
+            <div class="invalid-feedback" style="color: #e63946; font-size: 12px; text-align: left;">
                 La contraseña es obligatoria
             </div>
         </div>        
@@ -23,17 +28,23 @@
             class="btn btn-primary" 
             type="button" 
             (click)="onClickRegister()"
-            style="margin-inline: 10px;">Registrarme</button>
+            style="background-color: #111; color: #fff; padding: 12px 20px; border-radius: 4px; margin-inline: 10px; border: none; font-weight: 700;">
+            Registrarme
+        </button>
         <button 
             class="btn btn-primary" 
             type="button" 
             (click)="onClickLogin()"
-            style="margin-inline: 10px;">Iniciar Sesión</button>
+            style="background-color: #111; color: #fff; padding: 12px 20px; border-radius: 4px; margin-inline: 10px; border: none; font-weight: 700;">
+            Iniciar Sesión
+        </button>
         <button 
             class="btn btn-primary" 
             type="button" 
            (click)="onClickLoginWithGoogle()"
-            style="margin-inline: 10px;">Iniciar Sesión con Google</button>            
+            style="background-color: #4285f4; color: #fff; padding: 12px 20px; border-radius: 4px; margin-inline: 10px; border: none; font-weight: 700;">
+            Iniciar Sesión con Google
+        </button>            
     </form>
 
 </div>

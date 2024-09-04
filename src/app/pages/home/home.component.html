@@ -23,6 +23,13 @@
     footer .social-icons a:hover {
       color: #ccc;
     }
+
+  /* Asegura que todas las imágenes del carrusel tengan el mismo tamaño */
+  .carousel-inner img {
+    width: 100%;
+    height: 500px; /* Ajusta la altura según tu necesidad */
+    object-fit: cover;
+  }
 </style>
 
 <div class="container-fluid text-center">
@@ -73,7 +80,7 @@
           <img src="https://martimx.vtexassets.com/assets/vtex.file-manager-graphql/images/ca867ee4-40c8-4236-8a2b-1cec3790127a___731f8d57d2e239a5ccdce5475b219f9f.jpg" class="d-block w-100" alt="Oferta 2">
         </div>
         <div class="carousel-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhv8I-QOeW5Zj7jaDLHJp-XrRtU-g_qjK2Q&s" class="d-block w-100" alt="Oferta 2">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhv8I-QOeW5Zj7jaDLHJp-XrRtU-g_qjK2Q&s" class="d-block w-100" alt="Oferta 3">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -86,38 +93,40 @@
       </button>
     </div>
 
-<!-- Footer Section -->
-<footer class="bg-dark text-light text-center py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h5>Ayuda</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Estado del pedido</a></li>
-          <li><a href="#">Envíos</a></li>
-          <li><a href="#">Devoluciones</a></li>
-          <li><a href="#">Métodos de pago</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <h5>Acerca de Nike</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Carreras</a></li>
-          <li><a href="#">Inversionistas</a></li>
-          <li><a href="#">Sostenibilidad</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <h5>Síguenos</h5>
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-youtube"></i></a>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light text-center py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Ayuda</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Estado del pedido</a></li>
+              <li><a href="#">Envíos</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Métodos de pago</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Acerca de Nike</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Noticias</a></li>
+              <li><a href="#">Carreras</a></li>
+              <li><a href="#">Inversionistas</a></li>
+              <li><a href="#">Sostenibilidad</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Síguenos</h5>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
         </div>
+        <p class="mt-4">&copy; 2024 Tienda de Productos Nike. Todos los derechos reservados.</p>
       </div>
-    </div>
-    <p class="mt-4">&copy; 2024 Tienda de Productos Nike. Todos los derechos reservados.</p>
+    </footer>
   </div>
-</footer>
+</div>
